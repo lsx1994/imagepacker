@@ -1,0 +1,50 @@
+﻿<Window x:Class="ImagePacker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImagePacker"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="MainWindow" Height="712.617" Width="578.689">
+
+    <Grid HorizontalAlignment="Left" Width="576" Margin="0,0,-5,-1">
+        <Button x:Name="BtnStart" Content="导出图集" HorizontalAlignment="Left" Margin="480,55,0,0" VerticalAlignment="Top" Width="75" Height="44" Click="BtnStart_Click"/>
+        <Button x:Name="BtnTiny" Content="压缩图片" HorizontalAlignment="Left" Margin="480,189,0,0" VerticalAlignment="Top" Width="75" Height="45" Click="BtnTiny_Click"/>
+        <RichTextBox x:Name="MessageList" HorizontalAlignment="Left" Margin="2,404,0,0" Width="565" Background="Black" RenderTransformOrigin="0.497,-0.266">
+            <FlowDocument>
+                <Paragraph Name="phMessage"/>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox Name="PlistLoadDir" HorizontalAlignment="Left" Height="23" Margin="94,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White" TextChanged="PlistLoadDir_TextChanged"/>
+        <Label Content="图集目录" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="IsForceOutPlist" Content="清空后导出(慎用)" HorizontalAlignment="Left" Margin="443,132,0,0" VerticalAlignment="Top" Checked="IsForceOutPlist_Checked" Unchecked="IsForceOutPlist_Checked"/>
+        <TextBox Name="PlistMaxSize" TextChanged="PlistMaxSize_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="94,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76" Background="Black" Foreground="White"/>
+        <Label Content="图集尺寸" HorizontalAlignment="Left" Margin="23,125,0,0" VerticalAlignment="Top" Width="57"/>
+        <TextBox Name="PlistOnlyOne" HorizontalAlignment="Left" Height="23" Margin="94,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="单图目录" HorizontalAlignment="Left" Margin="22,64,0,0" VerticalAlignment="Top" Width="58"/>
+        <TextBox Name="PlistOutDir" TextChanged="PlistOutDir_TextChanged" HorizontalAlignment="Left" Height="23" Margin="94,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="导出目录" HorizontalAlignment="Left" Margin="22,36,0,0" VerticalAlignment="Top" Width="58"/>
+        <TextBox Name="TinyDir" TextChanged="TinyDir_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="94,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="压缩目录" HorizontalAlignment="Left" Margin="22,184,0,0" VerticalAlignment="Top" Width="58"/>
+        <Border BorderBrush="Green" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="10,165,0,0" VerticalAlignment="Top" Width="556" Background="Green"/>
+        <TextBox x:Name="OnlyCopyFiles" HorizontalAlignment="Left" Height="23" Margin="94,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="忽略图片" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="CopyFileWidth" TextChanged="CopyFileWidth_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="231,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="58" Background="Black" Foreground="White"/>
+        <Label Content="忽略宽" HorizontalAlignment="Left" Margin="182,126,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox x:Name="TinyParm" TextChanged="TinyParm_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="94,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="压缩参数" HorizontalAlignment="Left" Margin="22,214,0,0" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="CopyFileHeight" TextChanged="CopyFileHeight_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="346,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="58" Background="Black" Foreground="White"/>
+        <Label Content="忽略高" HorizontalAlignment="Left" Margin="297,126,0,0" VerticalAlignment="Top" Width="84"/>
+        <Border BorderBrush="Green" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="10,253,0,0" VerticalAlignment="Top" Width="556" Background="Green"/>
+        <TextBox x:Name="EncryDir" TextChanged="EncryDir_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="94,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="图片目录" HorizontalAlignment="Left" Margin="22,283,0,0" VerticalAlignment="Top" Width="58"/>
+        <Button x:Name="BtnEncry" Content="加密" HorizontalAlignment="Left" Margin="479,264,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="BtnEncry_Click"/>
+        <Button x:Name="BtnDecry" Content="解密" HorizontalAlignment="Left" Margin="480,299,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="BtnDecry_Click"/>
+        <Border BorderBrush="Green" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="10,333,0,0" VerticalAlignment="Top" Width="556" Background="Green"/>
+        <TextBox x:Name="AutoAtlasOutDir" TextChanged="AutoAtlasOutDir_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="94,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Background="Black" Foreground="White"/>
+        <Label Content="图集目录" HorizontalAlignment="Left" Margin="22,359,0,0" VerticalAlignment="Top" Width="58"/>
+        <Button x:Name="AutoAtlasCopy" Content="复制" HorizontalAlignment="Left" Margin="479,340,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="BtnAutoAtlasCopy_Click"/>
+        <Button x:Name="AutoAtlasDel" Content="删除" HorizontalAlignment="Left" Margin="479,372,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="BtnAutoAtlasDel_Click"/>
+    </Grid>
+</Window>

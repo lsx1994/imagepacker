@@ -1,0 +1,16 @@
+D:\Work\LSX\ToolsSource\ImagePacker\bin\ImagePacker.exe.config
+D:\Work\LSX\ToolsSource\ImagePacker\bin\ImagePacker.exe
+D:\Work\LSX\ToolsSource\ImagePacker\bin\ImagePacker.pdb
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\MainWindow.g.cs
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\App.g.cs
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker_MarkupCompile.cache
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker_MarkupCompile.lref
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\MainWindow.baml
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.g.resources
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.Properties.Resources.resources
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.csproj.GenerateResource.cache
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.csproj.CoreCompileInputs.cache
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.csproj.CopyComplete
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.exe
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.pdb
+D:\Work\LSX\ToolsSource\ImagePacker\ImagePacker\obj\Debug\ImagePacker.csprojAssemblyReference.cache

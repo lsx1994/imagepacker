@@ -1,0 +1,3 @@
+先打开 TexturePacker\bin\TexturePackerGUI.exe(已破解)
+同意协议后才能使用本工具！
+压缩目录不能有中文，pngquant不支持中文路径
